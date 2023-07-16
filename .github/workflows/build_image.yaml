@@ -1,5 +1,8 @@
 name: Build image for Reunion
 on: [push]
+permissions:
+  id-token: write
+  contents: read
 jobs: 
   Build-and-publish-image:
     runs-on: ubuntu-latest
